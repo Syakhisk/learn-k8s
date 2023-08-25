@@ -28,8 +28,8 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  config.vm.define "worker" do |config|
-    config.vm.hostname = "worker"
+  config.vm.define "worker-0" do |config|
+    config.vm.hostname = "worker-0"
     config.vm.network "private_network", ip: "192.168.56.11"
 
     config.vm.provider "virtualbox" do |vb|
